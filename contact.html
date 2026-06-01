@@ -1,0 +1,40 @@
+<h2>Contact Me:</h2>
+<h4>Feel free to reach out to me at:</h4>
+<form>
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label for ="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+        <br><br>
+        <label for ="role">Reason for contact:</label>
+        <select id="role" name="role" required>
+            <optgroup label="Professional">
+                <option value="general">General Inquiry</option>
+                <option value="collaboration">Collaboration Opportunity</option>
+                <option value="job">Job Opportunity</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <label for ="skills">Skills of interest:</label><br>
+        <input list="technologies" id="skills" name="skills">
+        <datalist id="technologies">
+            <option value="Python">
+            <option value="Django">
+            <option value="Machine Learning">
+            <option value="HTML & CSS">
+            <option value="JavaScript">
+        </datalist>
+        <br><br>
+        <label for="experience">Years of Experience:</label> <input type="number" id="experience" value="2"> 
+        <br><br> 
+        <output> Thank you for visiting my portfolio! </output> 
+        <br><br> 
+        <button type="submit">Send Message</button>
+        </fieldset>
+</form>
